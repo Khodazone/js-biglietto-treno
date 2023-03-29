@@ -16,15 +16,15 @@ let priceDiscount40 = ticketPrice / 100 * 60;
 // Apply discount based on the age
 if (myage < 18){
     console.log("Total price with a 20% discount:" + priceDiscount20);
-    document.getElementById("20%discount").innerHTML = priceDiscount20.toFixed(2)+"€;";
+    document.getElementById("20%discount").innerHTML = priceDiscount20.toFixed(2)+"&euro;";
 }
 else if (myage > 65){
     console.log("Total price with a 40% discount:" + priceDiscount40);
-    document.getElementById("40%discount").innerHTML = priceDiscount40.toFixed(2)+"€;";
+    document.getElementById("40%discount").innerHTML = priceDiscount40.toFixed(2)+"&euro;";
 }
 else{
     console.log("Total price without a discount:" + ticketPrice);
-    document.getElementById("Ticketprice").innerHTML = ticketPrice.toFixed(2)+"€;";
+    document.getElementById("Ticketprice").innerHTML = ticketPrice.toFixed(2)+"&euro;";
 }
 
 // Print information output
